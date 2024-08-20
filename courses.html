@@ -41,6 +41,39 @@
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text" href="index.html">Cerebra Labs</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Policies</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-solid-sm" href="#contact">Get quote</a>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
       
     <!-- Header -->
     <header id="header" class="header">
@@ -49,11 +82,16 @@
                 <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
                         <div class="section-title">Welcome to Cerebra Labs</div>
-                        <h1 class="h1-large">COURSES</h1>
+                        <h1 class="h1-large">Where Education meets Inspiration</h1>
                         <p class="p-large">Are you ready to unlock your full potential? Our personalized tutoring and dynamic short courses are designed to empower you to achieve your goals and ignite your passion for learning.</p>
+                        <a class="btn-solid-lg" href="#services">Offered services</a>
+                        <a class="quote" href="#contact"><i class="fas fa-paper-plane"></i>Get quote</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/header-illustration.svg" alt="alternative">
+                    </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -73,33 +111,32 @@
                             <span class="far fa-file-alt"></span>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Content Writing Beginner's Course</h5>
-                            <p>Level 1 Content Writing </br>
-                                This four-week beginner content writing course provides a comprehensive introduction to writing for various platforms. Students will learn foundational writing skills, including grammar, vocabulary, structure, and style. The curriculum focuses on practical application through exercises and a final project.</p>
+                            <h5 class="card-title">Tailored Learning</h5>
+                            <p>We understand that every learner is unique. Our customized approach ensures that you receive the support and guidance you need to thrive.</p>
                             <ul class="list-unstyled li-space-lg">
                                 <li class="d-flex">
                                     <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Understanding content writing and its purpose</div>
+                                    <div class="flex-grow-1">Initial Assessment</div>
                                 </li>
                                 <li class="d-flex">
                                     <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Basic writing structure and techniques</div>
+                                    <div class="flex-grow-1">Customized Learning Plan</div>
                                 </li>
                                 <li class="d-flex">
                                     <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Grammar and vocabulary essentials</div>
+                                    <div class="flex-grow-1">Flexible Teaching Methods</div>
                                 </li>
                                 <li class="d-flex">
                                     <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Creating engaging content for blogs and social media</div>
+                                    <div class="flex-grow-1">Regular Progress Reviews</div>
                                 </li>
                                 <li class="d-flex">
                                     <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Research and idea generation</div>
+                                    <div class="flex-grow-1">Interactive Learning Activities</div>
                                 </li>
                                 <li class="d-flex">
                                     <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Editing and proofreading</div>
+                                    <div class="flex-grow-1">Feedback and Support</div>
                                 </li>
                             </ul>
                         </div>
@@ -214,7 +251,7 @@
                 
                 <div class="grid">
                     <div class="element-item development">
-                        <a href="article.html">
+                        <a href="courses.html">
                             <img class="img-fluid" src="images/contentwritng.png" alt="alternative">
                             <p><strong>Content Writing Course</strong> - Write your way to success; Learn, Create and Shine</p>
                         </a>
