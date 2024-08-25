@@ -104,16 +104,16 @@ if (gridCheck !== null) {
 	});
 
 	// bind filter button click
-	var filtersElem = document.querySelector('.filters-button-group');
-	filtersElem.addEventListener( 'click', function( event ) {
-		// only work with buttons
-		if ( !matchesSelector( event.target, 'button' ) )  {
-			return;
-		}
-		var filterValue = event.target.getAttribute('data-filter');
-		// use matching filter function
-		iso.arrange({ filter: filterValue });
-	});
+	// var filtersElem = document.querySelector('.filters-button-group');
+	// filtersElem.addEventListener( 'click', function( event ) {
+	// 	// only work with buttons
+	// 	if ( !matchesSelector( event.target, 'button' ) )  {
+	// 		return;
+	// 	}
+	// 	var filterValue = event.target.getAttribute('data-filter');
+	// 	// use matching filter function
+	// 	iso.arrange({ filter: filterValue });
+	// });
 	
 	// change is-checked class on buttons
 	var buttonGroups = document.querySelectorAll('.button-group');
@@ -153,3 +153,74 @@ function topFunction() {
 	document.body.scrollTop = 0; // for Safari
 	document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
 }
+
+window.onload = function() {
+	// Reset the form fields when the page loads
+	document.querySelector('.contact-form').reset();
+};
+
+//When user presses Submit button
+// const contactform = document.querySelector('.contact-form');
+// const messageContainer = document.querySelector('.form-message');
+
+// contactform.addEventListener('submit', (event) => {
+//   event.preventDefault();
+//   console.log("Submit button pressed")
+//   console.log("Thanks for your message")
+//   messageContainer.innerHTML = '<p>Thanks for your message. <br /> We will respond to you shortly</p>';
+// });
+
+// When user presses Submit button
+const contactform = document.querySelector('.contact-form');
+const messageContainer = document.querySelector('.form-message');
+
+contactform.addEventListener('submit', (event) => {
+  event.preventDefault();
+  
+  // Get form data
+  const formData = new FormData(contactform);
+  const object = Object.fromEntries(formData);
+  // Get the email address
+  const email = object.email;
+
+  // Update the subject to include the email address
+  object.subject = `Request received from ${email}`;
+  const data = JSON.stringify(object);
+//   const data = JSON.stringify(object);
+
+  // AJAX request to FormSubmit
+  $.ajax({
+    url: "https://api.web3forms.com/submit", // Replace with your email
+    method: "POST",
+    data: data,
+    dataType: "object",
+	headers: {
+		'Content-Type': 'application/json'
+	  },
+	statusCode: {
+		200: function(response) {
+			console.log('Success: 200 OK');
+			messageContainer.innerHTML = '<p>Thanks for your message. <br /> We will respond to you shortly</p>';
+		},
+		404: function() {
+			console.log('Error: 404 Not Found');
+		},
+		400: function() {
+			console.log('Error: 400 Bad Request');
+			messageContainer.innerHTML = '<p>hCaptcha Token is mandatory for this form . <br /> Please re-submit this form.</p>';
+		}
+    }
+  });
+});
+
+// const connectbtn = document.querySelector('.connect-btn');
+// const crossbtn = document.querySelector('.cross-btn');
+// const socialcontainer = document.querySelector('.social-container');
+
+// connectbtn.addEventListener('click', () => {
+//   socialcontainer.classList.toggle('visible')
+// });
+
+// crossbtn.addEventListener('click', () => {
+//   socialcontainer.classList.remove('visible')
+// });
