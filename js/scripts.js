@@ -175,42 +175,54 @@ const contactform = document.querySelector('.contact-form');
 const messageContainer = document.querySelector('.form-message');
 
 contactform.addEventListener('submit', (event) => {
-  event.preventDefault();
-  
-  // Get form data
-  const formData = new FormData(contactform);
-  const object = Object.fromEntries(formData);
-  // Get the email address
-  const email = object.email;
+	event.preventDefault();
+	
+	// Show the loading spinner
+    document.getElementById('loading-spinner').style.display = 'block';
 
-  // Update the subject to include the email address
-  object.subject = `Request received from ${email}`;
-  const data = JSON.stringify(object);
-//   const data = JSON.stringify(object);
+	// Get form data
+	const formData = new FormData(contactform);
+	const object = Object.fromEntries(formData);
+	// Get the email address
+	const email = object.email;
 
-  // AJAX request to FormSubmit
-  $.ajax({
-    url: "https://api.web3forms.com/submit", // Replace with your email
-    method: "POST",
-    data: data,
-    dataType: "object",
+	// Update the subject to include the email address
+	object._subject = `Request received from ${email}`;
+	//   const data = JSON.stringify(object);
+	// const data = object;
+	// console.log(data)
+	const data = JSON.stringify(object);
+
+	// AJAX request to FormSubmit
+	$.ajax({
+	url: "https://formsubmit.co/ajax/89bb93777b85d4c66fdaeb950b687673", // Replace with your email
+	method: "POST",
+	dataType: "json",
+	data: data,
+	accepts: 'application/json',
 	headers: {
 		'Content-Type': 'application/json'
-	  },
+		},
 	statusCode: {
 		200: function(response) {
 			console.log('Success: 200 OK');
+			// Hide the loading spinner
+			document.getElementById('loading-spinner').style.display = 'none';
 			messageContainer.innerHTML = '<p>Thanks for your message. <br /> We will respond to you shortly</p>';
 		},
 		404: function() {
+			// Hide the loading spinner
+			document.getElementById('loading-spinner').style.display = 'none';
 			console.log('Error: 404 Not Found');
 		},
 		400: function() {
+			// Hide the loading spinner
+			document.getElementById('loading-spinner').style.display = 'none';
 			console.log('Error: 400 Bad Request');
 			messageContainer.innerHTML = '<p>hCaptcha Token is mandatory for this form . <br /> Please re-submit this form.</p>';
 		}
-    }
-  });
+	}
+	});
 });
 
 // const connectbtn = document.querySelector('.connect-btn');

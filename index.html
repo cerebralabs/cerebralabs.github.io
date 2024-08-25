@@ -334,27 +334,23 @@
                             <input type="text" class="form-control-input" name="name" placeholder="Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="hidden" name="access_key" value="4c4ad063-176e-4684-99bb-caa277efa7f3" required>
-                        </div>
-                        <div class="form-group">
                             <input type="email" class="form-control-input" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="hidden" name="from_name" value="CerebraLabs Notifications">
+                            <input type="hidden" class="form-control-input" name="_template" value="table">
+                            <input type="hidden" class="form-control-input" name="_captcha" value="false">
                         </div>
                         <div class="form-group">
-                            <input type="hidden" class="form-control-input" name="subject" value="Request received from " required>
+                            <input type="hidden" class="form-control-input" name="_subject" value="Request received from " required>
                         </div>
-                        
                         <div class="form-group">
                             <textarea class="form-control-textarea" name="message" placeholder="Message" required></textarea>
                         </div>
                         <div class="form-group">
-                            <div class="h-captcha form-group" data-captcha="true"></div>
-                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                        </div>
-                        <div class="form-group">
                             <button type="submit" class="form-control-submit-button">Submit</button>
+                        </div>
+                        <div id="loading-spinner" style="display: none;">
+                            <img src="images/spinner-icon.gif" alt="Loading...">
                         </div>
                     </form>
                     <!-- Message Placeholder -->
@@ -442,7 +438,7 @@
     <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/jquery-3.7.1.min.js"></script> <!-- Custom scripts -->
-    <script src="https://web3forms.com/client/script.js" async defer></script>
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <!-- <script src="https://web3forms.com/client/script.js" async defer></script> -->
+    <script src="js/scripts.js" async defer></script> <!-- Custom scripts -->
 </body>
 </html>
