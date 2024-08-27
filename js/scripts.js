@@ -19,18 +19,44 @@ function scrollFunction() {
 	}
 }
 
-// Navbar on mobile
-let elements = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");
-
-for (let i = 0; i < elements.length; i++) {
-	elements[i].addEventListener("click", () => {
-		document.querySelector(".offcanvas-collapse").classList.toggle("open");
-	});
+// Function to load a template from a file
+function loadTemplate(url) {
+    return fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        });
 }
 
-document.querySelector(".navbar-toggler").addEventListener("click", () => {
-  	document.querySelector(".offcanvas-collapse").classList.toggle("open");
-});
+// Load and render the navbar
+loadTemplate('../handlebars/navbar.hbs').then(templateContent => {
+    const navbarTemplate = Handlebars.compile(templateContent);
+    document.getElementById('navbarExample').innerHTML = navbarTemplate();
+	// Navbar on mobile
+	let elements = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");
+
+	for (let i = 0; i < elements.length; i++) {
+		elements[i].addEventListener("click", () => {
+			document.querySelector(".offcanvas-collapse").classList.toggle("open");
+		});
+	}
+
+	document.querySelector(".navbar-toggler").addEventListener("click", () => {
+		document.querySelector(".offcanvas-collapse").classList.toggle("open");
+	});
+
+}).catch(error => console.error('Error loading navbar:', error));
+
+// Load and render the footer
+loadTemplate('../handlebars/footer.hbs').then(templateContent => {
+    const footerTemplate = Handlebars.compile(templateContent);
+    document.getElementById('footer').innerHTML = footerTemplate();
+}).catch(error => console.error('Error loading footer:', error));
+
+
+
 
 // Hover on desktop
 function toggleDropdown(e) {
