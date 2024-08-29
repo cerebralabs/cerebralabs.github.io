@@ -30,30 +30,46 @@ function loadTemplate(url) {
         });
 }
 
-// Load and render the navbar
-loadTemplate('../handlebars/navbar.hbs').then(templateContent => {
-    const navbarTemplate = Handlebars.compile(templateContent);
-    document.getElementById('navbarExample').innerHTML = navbarTemplate();
-	// Navbar on mobile
-	let elements = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");
+// Define a function to load and render templates
+async function loadAndRenderTemplate(templatePath, targetElement, callback) {
+    try {
+        const templateContent = await loadTemplate(templatePath);
+        const compiledTemplate = Handlebars.compile(templateContent);
+        document.querySelector(targetElement).innerHTML = compiledTemplate();
+        if (callback) callback();
+    } catch (error) {
+        console.error(`Error loading ${templatePath}:`, error);
+    }
+}
 
-	for (let i = 0; i < elements.length; i++) {
-		elements[i].addEventListener("click", () => {
-			document.querySelector(".offcanvas-collapse").classList.toggle("open");
-		});
-	}
+// Load and render the navbar with mobile behavior
+loadAndRenderTemplate('../handlebars/navbar.hbs', '#navbarExample', () => {
+    // Navbar on mobile
+    let elements = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");
 
-	document.querySelector(".navbar-toggler").addEventListener("click", () => {
-		document.querySelector(".offcanvas-collapse").classList.toggle("open");
-	});
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].addEventListener("click", () => {
+            document.querySelector(".offcanvas-collapse").classList.toggle("open");
+        });
+    }
 
-}).catch(error => console.error('Error loading navbar:', error));
+    document.querySelector(".navbar-toggler").addEventListener("click", () => {
+        document.querySelector(".offcanvas-collapse").classList.toggle("open");
+    });
+});
 
-// Load and render the footer
-loadTemplate('../handlebars/footer.hbs').then(templateContent => {
-    const footerTemplate = Handlebars.compile(templateContent);
-    document.getElementById('footer').innerHTML = footerTemplate();
-}).catch(error => console.error('Error loading footer:', error));
+// Load and render other templates
+loadAndRenderTemplate('../handlebars/header.hbs', '#header');
+loadAndRenderTemplate('../handlebars/services.hbs', '#services');
+loadAndRenderTemplate('../handlebars/counter.hbs', '.counter');
+loadAndRenderTemplate('../handlebars/preview-courses.hbs', '#preview-courses');
+loadAndRenderTemplate('../handlebars/contact.hbs', '#contact');
+loadAndRenderTemplate('../handlebars/invitation.hbs', '#invitation');
+loadAndRenderTemplate('../handlebars/details.hbs', '#details');
+loadAndRenderTemplate('../handlebars/copyright.hbs', '#copyright');
+loadAndRenderTemplate('../handlebars/footer.hbs', '#footer');
+
+
 
 
 
