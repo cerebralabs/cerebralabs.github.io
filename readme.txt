@@ -24,7 +24,6 @@ All images are included in the download package and can be reused in your projec
 - Article details image large: https://www.pexels.com/photo/photo-of-imac-near-macbook-1029757/ 
 - Article details image small: https://www.pexels.com/photo/apple-office-internet-ipad-38544/
 
-
 CREDITS
 - Design by Ruhul Amin: https://dribbble.com/Ruhul-Amin 
 - Illustrations by Darko Vujic: https://creativemarket.com/users/graphics4u   
