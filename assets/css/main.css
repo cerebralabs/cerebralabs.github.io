@@ -155,8 +155,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 100px;
+  /* margin-right: 8px;*/
 }
 
 .header .logo h1 {
@@ -825,6 +825,25 @@ section,
 
 .section-title p .description-title {
   color: var(--accent-color);
+}
+
+/*keeping the header separate from body.*/
+main {
+  padding-top: 100px; /* Adjust this value based on your header height */
+}
+
+/* Ensure the header stays on top */
+header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Make sure the hero section doesn't have any negative margins */
+#hero {
+  margin-top: 0;
 }
 
 /*--------------------------------------------------------------
@@ -2764,4 +2783,24 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+/* logo container styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-container .sitename {
+  margin: 0;
+  padding: 0;
+}
+
+.gap {
+  height: 20px; /* Adjust the height as needed */
 }
