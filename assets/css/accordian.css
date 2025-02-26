@@ -1,0 +1,16 @@
+.bash-tree {
+    font-family: monospace;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .bash-tree pre {
+    white-space: pre-wrap;
+  }
+  
+  .bash-tree code {
+    background-color: transparent;
+    padding: 0;
+  }
