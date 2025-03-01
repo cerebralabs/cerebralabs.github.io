@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +27,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/courses.css" rel="stylesheet">
+  <link href="assets/css/accordian.css" rel="stylesheet">
 
 </head>
 
@@ -39,7 +42,7 @@
           <img src="assets/img/logo.png" alt="">
         </div>
       </a>
-            
+
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home<br></a></li>
@@ -47,7 +50,7 @@
           <li><a href="index.html">Services</a></li>
           <li><a href="courses.html">Courses</a></li>
           <li><a href="blog.html">Knowledgebase</a></li>
-          <li><a href="index.html">Contact</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -62,7 +65,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Canva Designing</h1>
+              <h1>Canva Course</h1>
               <p class="mb-0"></p>
             </div>
           </div>
@@ -77,10 +80,188 @@
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
+    <!-- End Page Title -->
 
-    <!-- Courses -->
-     
+    <!-- ContentWritingCourse -->
+    <section id="contentwritingcourse" class="contentwritingcourse">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="contentwritingcourse-content">
+              <h2>Canva Course</h2>
+              <p>Kickstart your design journey with our "Creative Canva Course". 
+                Over four weeks, you'll learn how to navigate Canva, apply fundamental design principles, and create stunning visuals for social media and marketing.
+                Perfect for anyone looking to enhance their design skills, no prior experience needed.
+                CerebraLabs is conducting a canva course with <i>1-hour class held every Sunday.</i>
+              </p>
+              <p>In this course, you will learn:</br>
+                <b>Canva Interface and Navigation:</b> Understand Canva's dashboard, navigation, and design tools.
+                </br><b>Basic Design Principles:</b>  Learn color theory, typography, balance, and alignment.
+                </br><b>Template Customization:</b> Choose and customize Canva templates for various projects.
+                </br><b>Social Media Design:</b> Create eye-catching social media graphics for platforms like Instagram, Facebook, and Twitter.
+                </br><b>Canva's Free Elements:</b> Utilize free photos, illustrations, and icons.
+                </br><b>Marketing Material Design:</b> Design posters, flyers, and business cards.
+                </br><b>Practical Design Projects:</b> Apply learned skills to create a complete design project.
+              </p>
+              <p> Benefits of Taking Our Course:
+                </br><b>Beginner-Friendly Introduction:</b> Start with the basics and build your design skills from the ground up.
+                </br><b>Practical Application:</b> Gain hands-on experience through real-world design projects.
+                </br><b>Skill Development:</b> Learn to create professional-looking designs for various purposes.
+                </br><b>Versatile Tool Usage:</b> Master a widely used and accessible design platform.
+                </br><b>Constructive Feedback:</b> Receive feedback on your final project for improvement.
+                </br><b>Structured Learning:</b> Learn design fundamentals within a clear and concise 1 month course.
+              </p>
+              <p><b>Who is this course for?</b></br>
+                Beginners with no prior design experience.</br>
+                Small business owners and entrepreneurs.</br>
+                Social media managers and marketers.</br>
+                Students and individuals looking to improve their design skills.</br>
+                Anyone who wants to learn to use Canva.</br>
+              </p>
+              <p>Let's start designing together!</p>
+              <a href="index.html#contact" class="btn btn-primary">Enroll Now!</a>
+
+
+              <!-- Course Outline Accordion -->
+              <div class="accordion mt-4" id="courseOutlineAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingMain">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseMain" aria-expanded="true" aria-controls="collapseMain">
+                      Course Outline
+                    </button>
+                  </h2>
+                  <div id="collapseMain" class="accordion-collapse collapse show" aria-labelledby="headingMain"
+                    data-bs-parent="#courseOutlineAccordion">
+                    <div class="accordion-body p-3">
+                      <!-- Nested Accordion for Weeks -->
+                      <div class="accordion" id="weeklyOutlineAccordion">
+                        <!-- Week 1 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingWeek1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseWeek1" aria-expanded="false" aria-controls="collapseWeek1">
+                              Week 1: Introduction to Content Writing
+                            </button>
+                          </h2>
+                          <div id="collapseWeek1" class="accordion-collapse collapse" aria-labelledby="headingWeek1"
+                            data-bs-parent="#weeklyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Session 1: Understanding Content Writing</h6>
+                                <li>Overview of content writing and its significance</li>
+                                <li>Different types of content (blogs, articles, social media posts, etc.)</li>
+                                <li>Identifying the target audience</li>
+                                </br>
+                                <h6>Session 2: Writing Basics</h6>
+                                <li>Structuring content (Introduction, Body, Conclusion)</li>
+                                <li>Importance of clarity and coherence in writing</li>
+                                <li>Practice writing a short paragraph on a simple topic</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Week 2 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingWeek2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseWeek2" aria-expanded="false" aria-controls="collapseWeek2">
+                              Week 2: Developing Core Writing Skills
+                            </button>
+                          </h2>
+                          <div id="collapseWeek2" class="accordion-collapse collapse" aria-labelledby="headingWeek2"
+                            data-bs-parent="#weeklyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Session 3: Grammar and Vocabulary Essentials</h6>
+                                <li>Key grammar rules to improve writing quality</li>
+                                <li>Expanding vocabulary relevant to content writing</li>
+                                <li>Writing concise and impactful sentences</li>
+                                </br>
+                                <h6>Session 4: Writing Techniques</h6>
+                                <li>Creating engaging headlines and introductions</li>
+                                <li>Understanding tone and style in writing</li>
+                                <li>Practice writing a short blog post with peer review</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Week 3 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingWeek3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseWeek3" aria-expanded="false" aria-controls="collapseWeek3">
+                              Week 3: Exploring Content Types
+                            </button>
+                          </h2>
+                          <div id="collapseWeek3" class="accordion-collapse collapse" aria-labelledby="headingWeek3"
+                            data-bs-parent="#weeklyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Session 5: Blogging and Social Media Content</h6>
+                                <li>Introduction to blog writing: structure and style</li>
+                                <li>Writing for social media: crafting engaging posts and captions</li>
+                                <li>Tips for using visuals and hashtags effectively</li>
+                                </br>
+                                <h6>Session 6: Research and Idea Generation</h6>
+                                <li>How to research topics and find reliable sources</li>
+                                <li>Brainstorming techniques for generating content ideas</li>
+                                <li>Practice writing a researched paragraph with citations</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Week 4 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingWeek4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseWeek4" aria-expanded="false" aria-controls="collapseWeek4">
+                              Week 4: Editing and Final Project
+                            </button>
+                          </h2>
+                          <div id="collapseWeek4" class="accordion-collapse collapse" aria-labelledby="headingWeek4"
+                            data-bs-parent="#weeklyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Session 7: Editing and Proofreading</h6>
+                                <li>The importance of editing and common mistakes to avoid</li>
+                                <li>Tools for editing and proofreading your work</li>
+                                <li>Practice editing a peer’s work and providing constructive feedback</li>
+                                </br>
+                                <h6>Session 8: Final Project and Presentation</h6>
+                                <li>Assigning a final content writing project (blog post or social media campaign)</li>
+                                <li>Presenting the final project to the class</li>
+                                <li>Receiving feedback and reflecting on learning outcomes</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Nested Accordion -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="contentwritingcourse-sidebar">
+              <h3>Course Details</h3>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Duration:</strong> 1 Month</li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Course Fee:</strong> PKR 4000</li>
+              </ul>
+              <img src="assets/img/ContentWriter.png" alt="Content Writing Course" class="img-fluid mt-3">
+            </div>
+          </div>
+        </div>
 
   </main>
 
@@ -128,7 +309,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">CerebraLabs</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">CerebraLabs</strong> <span>All Rights Reserved</span>
+      </p>
       <!-- <div class="credits">
          All the links in the footer should remain intact.
          You can delete the links only if you've purchased the pro version. 
@@ -141,7 +323,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
