@@ -1180,7 +1180,7 @@ header {
 
 .courses .course-item.item-canva .icon {
   color: #7D2AE8;
-  background: rgba(125, 42, 232, 0.1);
+  background: transparent;
 }
 
 .courses .course-item.item-canva .read-more {
@@ -1201,7 +1201,7 @@ header {
 
 .courses .course-item.item-python .icon {
   color: #2B5B84;
-  background: rgba(43, 91, 132, 0.1);
+  background: transparent;
 }
 
 .courses .course-item.item-python .read-more {
@@ -1218,7 +1218,7 @@ header {
 
 .courses .course-item.item-msoffice .icon {
   color: #D83B01;
-  background: rgba(216, 59, 1, 0.1);
+  background: transparent;
 }
 
 .courses .course-item.item-msoffice .read-more {
@@ -1247,7 +1247,7 @@ header {
 
 .courses .course-item.item-communication .icon {
   color: #1E40AF;
-  background: rgba(30, 64, 175, 0.1);
+  background: transparent;
 }
 
 .courses .course-item.item-communication .read-more {
@@ -1264,7 +1264,7 @@ header {
 
 .courses .course-item.item-content .icon {
   color: #2ecc71;
-  background: rgba(46, 204, 113, 0.1);
+  background: transparent;
 }
 
 .courses .course-item.item-content .read-more {
@@ -1299,7 +1299,7 @@ header {
 
 .courses .course-item.item-psychology .icon {
   color: #8E44AD;
-  background: rgba(142, 68, 173, 0.1);
+  background: transparent;
 }
 
 .courses .course-item.item-psychology .read-more {
@@ -1351,7 +1351,8 @@ header {
 }
 
 .courses .course-item:hover .icon {
-  background: #fff;
+  background: transparent;
+  color: #ffffff !important;
 }
 
 /*--------------------------------------------------------------
