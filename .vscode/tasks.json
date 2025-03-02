@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+		"label": "start live-server",
+		"type": "shell",
+		"command": "live-server --port=8080 -no-browser",
+		"isBackground": true,
+		"problemMatcher": {
+			"owner": "custom",
+			"pattern": {
+			"regexp": "."
+			},
+			"background": {
+			"activeOnStart": true,
+			"beginsPattern": ".*(Starting live-server|Initializing live-server).*",
+			"endsPattern": ".*(Serving|Live Server is running).*"
+			}
+		}
+		}
+	]
+}
