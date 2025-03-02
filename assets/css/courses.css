@@ -1174,8 +1174,59 @@ header {
   font-size: 18px;
 }
 
+.courses .course-item.item-canva {
+  border-bottom: 3px solid #7D2AE8;
+}
+
+.courses .course-item.item-canva .icon {
+  color: #7D2AE8;
+  background: rgba(125, 42, 232, 0.1);
+}
+
+.courses .course-item.item-canva .read-more {
+  color: #7D2AE8;
+}
+
+.courses .course-item.item-canva:hover {
+  background: linear-gradient(135deg, #7D2AE8, #00C4CC);
+}
+
 .courses .course-item.item-cyan {
   border-bottom: 3px solid #0dcaf0;
+}
+
+.courses .course-item.item-python {
+  border-bottom: 3px solid #2B5B84;
+}
+
+.courses .course-item.item-python .icon {
+  color: #2B5B84;
+  background: rgba(43, 91, 132, 0.1);
+}
+
+.courses .course-item.item-python .read-more {
+  color: #2B5B84;
+}
+
+.courses .course-item.item-python:hover {
+  background: linear-gradient(135deg, #2B5B84, #FFD43B);
+}
+
+.courses .course-item.item-msoffice {
+  border-bottom: 3px solid #D83B01;
+}
+
+.courses .course-item.item-msoffice .icon {
+  color: #D83B01;
+  background: rgba(216, 59, 1, 0.1);
+}
+
+.courses .course-item.item-msoffice .read-more {
+  color: #D83B01;
+}
+
+.courses .course-item.item-msoffice:hover {
+  background: linear-gradient(135deg, #D83B01, #0078D4);
 }
 
 .courses .course-item.item-cyan .icon {
@@ -1190,23 +1241,40 @@ header {
 .courses .course-item.item-cyan:hover {
   background: #0dcaf0;
 }
-
-.courses .course-item.item-orange {
-  border-bottom: 3px solid #fd7e14;
+.courses .course-item.item-communication {
+  border-bottom: 3px solid #1E40AF;
 }
 
-.courses .course-item.item-orange .icon {
-  color: #fd7e14;
-  background: rgba(253, 126, 20, 0.1);
+.courses .course-item.item-communication .icon {
+  color: #1E40AF;
+  background: rgba(30, 64, 175, 0.1);
 }
 
-.courses .course-item.item-orange .read-more {
-  color: #fd7e14;
+.courses .course-item.item-communication .read-more {
+  color: #1E40AF;
 }
 
-.courses .course-item.item-orange:hover {
-  background: #fd7e14;
+.courses .course-item.item-communication:hover {
+  background: linear-gradient(135deg, #1E40AF, #38BDF8);
 }
+
+.courses .course-item.item-content {
+  border-bottom: 3px solid #2ecc71;
+}
+
+.courses .course-item.item-content .icon {
+  color: #2ecc71;
+  background: rgba(46, 204, 113, 0.1);
+}
+
+.courses .course-item.item-content .read-more {
+  color: #2ecc71;
+}
+
+.courses .course-item.item-content:hover {
+  background: linear-gradient(135deg, #2ecc71, #16a085);
+}
+
 
 .courses .course-item.item-teal {
   border-bottom: 3px solid #20c997;
@@ -1225,21 +1293,21 @@ header {
   background: #20c997;
 }
 
-.courses .course-item.item-red {
-  border-bottom: 3px solid #df1529;
+.courses .course-item.item-psychology {
+  border-bottom: 3px solid #8E44AD;
 }
 
-.courses .course-item.item-red .icon {
-  color: #df1529;
-  background: rgba(223, 21, 4, 0.1);
+.courses .course-item.item-psychology .icon {
+  color: #8E44AD;
+  background: rgba(142, 68, 173, 0.1);
 }
 
-.courses .course-item.item-red .read-more {
-  color: #df1529;
+.courses .course-item.item-psychology .read-more {
+  color: #8E44AD;
 }
 
-.courses .course-item.item-red:hover {
-  background: #df1529;
+.courses .course-item.item-psychology:hover {
+  background: linear-gradient(135deg, #8E44AD, #E74C3C);
 }
 
 .courses .course-item.item-indigo {
