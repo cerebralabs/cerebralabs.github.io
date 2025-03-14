@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +27,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/courses.css" rel="stylesheet">
+  <link href="assets/css/accordian.css" rel="stylesheet">
 
 </head>
 
@@ -39,15 +42,15 @@
           <img src="assets/img/logo.png" alt="">
         </div>
       </a>
-            
+
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home<br></a></li>
           <li><a href="index.html">About</a></li>
-          <li><a href="index.html">Services</a></li>
+          <li><a href="index.html#services">Services</a></li>
           <li><a href="courses.html">Courses</a></li>
           <li><a href="blog.html">Knowledgebase</a></li>
-          <li><a href="index.html">Contact</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -62,7 +65,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Canva Designing</h1>
+              <h1>Communication Skills Course</h1>
               <p class="mb-0"></p>
             </div>
           </div>
@@ -73,14 +76,295 @@
           <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="courses.html">Courses</a></li>
-            <li class="current">Canva Course</li>
+            <li class="current">Communication Skills Course</li>
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
+    <!-- End Page Title -->
 
-    <!-- Courses -->
-     
+    <!-- Communication Skills Course -->
+    <section id="CommunicationSkillsCourse" class="contentwritingcourse">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="contentwritingcourse-content">
+              <h2>Mastering Communication Skills: A 10-Day Journey</h2>
+              <p>Enhance your personal and professional interactions with our comprehensive "Communication Skills Course". 
+                Over ten days, you'll learn essential verbal and non-verbal communication techniques, active listening skills, and strategies for effective public speaking.
+                Perfect for anyone looking to improve their communication abilities, regardless of experience level.
+                CerebraLabs is conducting this communication skills course with <i>30-minute sessions held for 10 days.</i>
+              </p>
+              <p>In this course, you will learn:</br>
+                <b>Fundamentals of Communication:</b> Understand the basic components and types of communication.
+                </br><b>Verbal Communication:</b> Develop clarity, conciseness, and effective tone in speech.
+                </br><b>Non-Verbal Communication:</b> Master body language, facial expressions, and gestures.
+                </br><b>Written Communication:</b> Learn to write clear, effective emails, reports, and messages.
+                </br><b>Active Listening:</b> Enhance your ability to listen attentively and respond appropriately.
+                </br><b>Interpersonal Skills:</b> Build rapport and handle difficult conversations with confidence.
+                </br><b>Public Speaking:</b> Overcome anxiety and deliver impactful presentations.
+              </p>
+              <p> Benefits of Taking Our Course:
+                </br><b>Improved Relationships:</b> Enhance both personal and professional interactions.
+                </br><b>Career Advancement:</b> Develop a crucial skill set valued by employers across industries.
+                </br><b>Increased Confidence:</b> Feel more assured in various communication scenarios.
+                </br><b>Conflict Resolution:</b> Learn to navigate disagreements constructively.
+                </br><b>Practical Application:</b> Gain hands-on experience through interactive activities and role-plays.
+                </br><b>Structured Learning:</b> Master communication fundamentals within a concise 10-day format.
+              </p>
+              
+              <p><b>Who is this course for?</b></br>
+                Professionals seeking to advance their careers.</br>
+                Team leaders and managers.</br>
+                Customer service representatives.</br>
+                Students preparing for job interviews.</br>
+                Anyone looking to improve their communication effectiveness.</br>
+              </p>
+              <p>Let's start communicating better together!</p>
+              <a href="index.html#contact" class="btn btn-primary">Enroll Now!</a>
+
+
+              <!-- Course Outline Accordion -->
+              <div class="accordion mt-4" id="courseOutlineAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingMain">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseMain" aria-expanded="true" aria-controls="collapseMain">
+                      Course Outline
+                    </button>
+                  </h2>
+                  <div id="collapseMain" class="accordion-collapse collapse show" aria-labelledby="headingMain"
+                    data-bs-parent="#courseOutlineAccordion">
+                    <div class="accordion-body p-3">
+                      <!-- Nested Accordion for Days -->
+                      <div class="accordion" id="dailyOutlineAccordion">
+                        <!-- Day 1 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingDay1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseDay1" aria-expanded="false" aria-controls="collapseDay1">
+                              Day 1: Introduction to Communication
+                            </button>
+                          </h2>
+                          <div id="collapseDay1" class="accordion-collapse collapse" aria-labelledby="headingDay1"
+                            data-bs-parent="#dailyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Objectives:</h6>
+                                <li>Understand the importance of effective communication</li>
+                                <li>Familiarize with the basic components of communication</li>
+                                </br>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Day 2 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingDay2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseDay2" aria-expanded="false" aria-controls="collapseDay2">
+                              Day 2: Verbal Communication Skills
+                            </button>
+                          </h2>
+                          <div id="collapseDay2" class="accordion-collapse collapse" aria-labelledby="headingDay2"
+                            data-bs-parent="#dailyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Objectives:</h6>
+                                <li>Develop effective verbal communication techniques</li>
+                                </br>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Day 3 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingDay3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseDay3" aria-expanded="false" aria-controls="collapseDay3">
+                              Day 3: Non-Verbal Communication
+                            </button>
+                          </h2>
+                          <div id="collapseDay3" class="accordion-collapse collapse" aria-labelledby="headingDay3"
+                            data-bs-parent="#dailyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Objectives:</h6>
+                                <li>Understand the role of body language and non-verbal cues</li>
+                                </br>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Day 4 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingDay4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseDay4" aria-expanded="false" aria-controls="collapseDay4">
+                              Day 4: Written Communication Skills
+                            </button>
+                          </h2>
+                          <div id="collapseDay4" class="accordion-collapse collapse" aria-labelledby="headingDay4"
+                            data-bs-parent="#dailyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Objectives:</h6>
+                                <li>Improve written communication techniques</li>
+                                </br>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Day 5 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingDay5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseDay5" aria-expanded="false" aria-controls="collapseDay5">
+                              Day 5: Listening Skills
+                            </button>
+                          </h2>
+                          <div id="collapseDay5" class="accordion-collapse collapse" aria-labelledby="headingDay5"
+                            data-bs-parent="#dailyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Objectives:</h6>
+                                <li>Enhance active listening abilities</li>
+                                </br>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Day 6 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingDay6">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseDay6" aria-expanded="false" aria-controls="collapseDay6">
+                              Day 6: Interpersonal Communication
+                            </button>
+                          </h2>
+                          <div id="collapseDay6" class="accordion-collapse collapse" aria-labelledby="headingDay6"
+                            data-bs-parent="#daily
+                            <div id="collapseDay6" class="accordion-collapse collapse" aria-labelledby="headingDay6"
+                            data-bs-parent="#dailyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Objectives:</h6>
+                                <li>Develop skills for effective one-on-one communication</li>
+                                </br>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Day 7 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingDay7">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseDay7" aria-expanded="false" aria-controls="collapseDay7">
+                              Day 7: Public Speaking Skills
+                            </button>
+                          </h2>
+                          <div id="collapseDay7" class="accordion-collapse collapse" aria-labelledby="headingDay7"
+                            data-bs-parent="#dailyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Objectives:</h6>
+                                <li>Build confidence and skills for public speaking</li>
+                                </br>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Day 8 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingDay8">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseDay8" aria-expanded="false" aria-controls="collapseDay8">
+                              Day 8: Communication in Teams
+                            </button>
+                          </h2>
+                          <div id="collapseDay8" class="accordion-collapse collapse" aria-labelledby="headingDay8"
+                            data-bs-parent="#dailyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Objectives:</h6>
+                                <li>Understand the dynamics of communication within teams</li>
+                                </br>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Day 9 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingDay9">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseDay9" aria-expanded="false" aria-controls="collapseDay9">
+                              Day 9: Digital Communication Skills
+                            </button>
+                          </h2>
+                          <div id="collapseDay9" class="accordion-collapse collapse" aria-labelledby="headingDay9"
+                            data-bs-parent="#dailyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Objectives:</h6>
+                                <li>Learn effective communication in digital contexts</li>
+                                </br>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Day 10 -->
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingDay10">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseDay10" aria-expanded="false" aria-controls="collapseDay10">
+                              Day 10: Review and Application
+                            </button>
+                          </h2>
+                          <div id="collapseDay10" class="accordion-collapse collapse" aria-labelledby="headingDay10"
+                            data-bs-parent="#dailyOutlineAccordion">
+                            <div class="accordion-body">
+                              <ul>
+                                <h6>Objectives:</h6>
+                                <li>Review key concepts and apply skills learned throughout the course</li>
+                                </br>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Nested Accordion -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="contentwritingcourse-sidebar">
+              <h3>Course Details</h3>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Duration:</strong> 10 Days</li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Schedule:</strong> Tue & Thurs</li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Course Fee:</strong> PKR 1500</li>
+              </ul>
+              <img src="assets/img/about.jpg" alt="Communication Skills Course" class="img-fluid mt-3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -128,20 +412,22 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">CerebraLabs</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">CerebraLabs</strong> <span>All Rights Reserved</span>
+      </p>
       <!-- <div class="credits">
          All the links in the footer should remain intact.
          You can delete the links only if you've purchased the pro version. 
          Licensing information: https://bootstrapmade.com/license/ 
          Purchase the pro version with working PHP/AJAX contact form: [buy-url] 
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com>ThemeWagon
       </div> -->
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -159,3 +445,4 @@
 </body>
 
 </html>
+
