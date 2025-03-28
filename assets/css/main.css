@@ -2151,6 +2151,232 @@ header {
 }
 
 /*--------------------------------------------------------------
+# Courses Section
+--------------------------------------------------------------*/
+.courses .course-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 60px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.courses .course-item .icon {
+  font-size: 36px;
+  padding: 20px 20px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 25px;
+  display: inline-block;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.courses .course-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.courses .course-item .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+}
+
+.courses .course-item .read-more i {
+  line-height: 0;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.courses .course-item.item-canva {
+  border-bottom: 3px solid #7D2AE8;
+}
+
+.courses .course-item.item-canva .icon {
+  color: #7D2AE8;
+  background: transparent;
+}
+
+.courses .course-item.item-canva .read-more {
+  color: #7D2AE8;
+}
+
+.courses .course-item.item-canva:hover {
+  background: linear-gradient(135deg, #7D2AE8, #00C4CC);
+}
+
+.courses .course-item.item-cyan {
+  border-bottom: 3px solid #0dcaf0;
+}
+
+.courses .course-item.item-python {
+  border-bottom: 3px solid #2B5B84;
+}
+
+.courses .course-item.item-python .icon {
+  color: #2B5B84;
+  background: transparent;
+}
+
+.courses .course-item.item-python .read-more {
+  color: #2B5B84;
+}
+
+.courses .course-item.item-python:hover {
+  background: linear-gradient(135deg, #2B5B84, #FFD43B);
+}
+
+.courses .course-item.item-msoffice {
+  border-bottom: 3px solid #D83B01;
+}
+
+.courses .course-item.item-msoffice .icon {
+  color: #D83B01;
+  background: transparent;
+}
+
+.courses .course-item.item-msoffice .read-more {
+  color: #D83B01;
+}
+
+.courses .course-item.item-msoffice:hover {
+  background: linear-gradient(135deg, #D83B01, #0078D4);
+}
+
+.courses .course-item.item-cyan .icon {
+  color: #0dcaf0;
+  background: rgba(13, 202, 240, 0.1);
+}
+
+.courses .course-item.item-cyan .read-more {
+  color: #0dcaf0;
+}
+
+.courses .course-item.item-cyan:hover {
+  background: #0dcaf0;
+}
+.courses .course-item.item-communication {
+  border-bottom: 3px solid #1E40AF;
+}
+
+.courses .course-item.item-communication .icon {
+  color: #1E40AF;
+  background: transparent;
+}
+
+.courses .course-item.item-communication .read-more {
+  color: #1E40AF;
+}
+
+.courses .course-item.item-communication:hover {
+  background: linear-gradient(135deg, #1E40AF, #38BDF8);
+}
+
+.courses .course-item.item-content {
+  border-bottom: 3px solid #2ecc71;
+}
+
+.courses .course-item.item-content .icon {
+  color: #2ecc71;
+  background: transparent;
+}
+
+.courses .course-item.item-content .read-more {
+  color: #2ecc71;
+}
+
+.courses .course-item.item-content:hover {
+  background: linear-gradient(135deg, #2ecc71, #16a085);
+}
+
+
+.courses .course-item.item-teal {
+  border-bottom: 3px solid #20c997;
+}
+
+.courses .course-item.item-teal .icon {
+  color: #20c997;
+  background: rgba(32, 201, 151, 0.1);
+}
+
+.courses .course-item.item-teal .read-more {
+  color: #20c997;
+}
+
+.courses .course-item.item-teal:hover {
+  background: #20c997;
+}
+
+.courses .course-item.item-psychology {
+  border-bottom: 3px solid #8E44AD;
+}
+
+.courses .course-item.item-psychology .icon {
+  color: #8E44AD;
+  background: transparent;
+}
+
+.courses .course-item.item-psychology .read-more {
+  color: #8E44AD;
+}
+
+.courses .course-item.item-psychology:hover {
+  background: linear-gradient(135deg, #8E44AD, #E74C3C);
+}
+
+.courses .course-item.item-indigo {
+  border-bottom: 3px solid #6610f2;
+}
+
+.courses .course-item.item-indigo .icon {
+  color: #6610f2;
+  background: rgba(102, 16, 242, 0.1);
+}
+
+.courses .course-item.item-indigo .read-more {
+  color: #6610f2;
+}
+
+.courses .course-item.item-indigo:hover {
+  background: #6610f2;
+}
+
+.courses .course-item.item-pink {
+  border-bottom: 3px solid #f3268c;
+}
+
+.courses .course-item.item-pink .icon {
+  color: #f3268c;
+  background: rgba(243, 38, 140, 0.1);
+}
+
+.courses .course-item.item-pink .read-more {
+  color: #f3268c;
+}
+
+.courses .course-item.item-pink:hover {
+  background: #f3268c;
+}
+
+.courses .course-item:hover h3,
+.courses .course-item:hover p,
+.courses .course-item:hover .read-more {
+  color: #fff;
+}
+
+.courses .course-item:hover .icon {
+  background: transparent;
+  color: #ffffff !important;
+}
+
+
+/*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
