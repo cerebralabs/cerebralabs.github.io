@@ -1014,24 +1014,54 @@ header {
 .values .card {
   background-color: var(--surface-color);
   color: var(--default-color);
-  padding: 30px;
+  padding: 0;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: 0.3s;
   height: 100%;
   border: 0;
+  overflow: hidden;
 }
 
 .values .card img {
-  padding: 30px 50px;
+  width: 100%;
+  height: auto;
+  display: block;
   transition: 0.5s;
-  transform: scale(1.1);
 }
 
-.values .card h3 {
+/* Card variations */
+.values .card-primary img {
+  border-bottom: 3px solid #208273;
+}
+
+.values .card-secondary img {
+  border-bottom: 3px solid #376181;
+}
+
+.values .card-tertiary img {
+  border-bottom: 3px solid #F5B517;
+}
+
+.values .card .content-divider {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0;
+  width: 100%;
+}
+
+.values .card .text-content {
+  padding: 25px;
+}
+
+.values .card .text-content h3 {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
+}
+
+.values .card .text-content p {
+  margin-bottom: 0;
 }
 
 .values .card:hover {
