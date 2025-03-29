@@ -1193,12 +1193,12 @@ header {
 .services .service-item .icon {
   font-size: 36px;
   padding: 20px 20px;
-  border-radius: 4px;
   position: relative;
   margin-bottom: 25px;
   display: inline-block;
   line-height: 0;
   transition: 0.3s;
+  background: transparent;
 }
 
 .services .service-item h3 {
@@ -1227,7 +1227,6 @@ header {
 
 .services .service-item.item-cyan .icon {
   color: #0dcaf0;
-  background: rgba(13, 202, 240, 0.1);
 }
 
 .services .service-item.item-cyan .read-more {
@@ -1244,7 +1243,6 @@ header {
 
 .services .service-item.item-orange .icon {
   color: #fd7e14;
-  background: rgba(253, 126, 20, 0.1);
 }
 
 .services .service-item.item-orange .read-more {
@@ -1261,7 +1259,6 @@ header {
 
 .services .service-item.item-teal .icon {
    color: #4B8BBE;
-   background: rgba(75, 139, 190, 0.1);
 }
 
 .services .service-item.item-teal .read-more {
@@ -1278,7 +1275,6 @@ header {
 
 .services .service-item.item-red .icon {
   color: #df1529;
-  background: rgba(223, 21, 4, 0.1);
 }
 
 .services .service-item.item-red .read-more {
@@ -1295,7 +1291,6 @@ header {
 
 .services .service-item.item-indigo .icon {
   color: #6610f2;
-  background: rgba(102, 16, 242, 0.1);
 }
 
 .services .service-item.item-indigo .read-more {
@@ -1312,7 +1307,6 @@ header {
 
 .services .service-item.item-pink .icon {
   color: #f3268c;
-  background: rgba(243, 38, 140, 0.1);
 }
 
 .services .service-item.item-pink .read-more {
@@ -1330,7 +1324,8 @@ header {
 }
 
 .services .service-item:hover .icon {
-  background: #fff;
+  background: transparent;
+  color: #ffffff !important;
 }
 
 /*--------------------------------------------------------------
