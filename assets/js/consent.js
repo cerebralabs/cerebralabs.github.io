@@ -1,5 +1,15 @@
 (function(){
   const KEY = 'cerebra_consent';
+  const COOKIE_NAME = 'cerebra_consent';
+  function setCookie(name, value, days){
+    const d = new Date(); d.setTime(d.getTime() + (days*24*60*60*1000));
+    document.cookie = name + '=' + encodeURIComponent(value) + ';path=/;expires=' + d.toUTCString() + ';SameSite=Lax';
+  }
+  function getCookie(name){
+    const v = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
+    return v ? decodeURIComponent(v.pop()) : null;
+  }
+
   function setGtagConsent(status, attempts = 0){
     if(window.gtag){
       if(status === 'granted'){
@@ -18,9 +28,11 @@
 
   function hideBanner(banner){ if(banner && banner.parentNode) banner.parentNode.removeChild(banner); }
 
-  const stored = localStorage.getItem(KEY);
+  // check localStorage first, fallback to cookie (handles odd environments)
+  const stored = localStorage.getItem(KEY) || getCookie(COOKIE_NAME);
   if(stored){
     setGtagConsent(stored);
+    // ensure banner is not built/shown
     return;
   }
 
@@ -39,11 +51,13 @@
 
   document.getElementById('cookie-accept').addEventListener('click', function(){
     localStorage.setItem(KEY, 'granted');
+    setCookie(COOKIE_NAME, 'granted', 365);
     setGtagConsent('granted');
     hideBanner(banner);
   });
   document.getElementById('cookie-reject').addEventListener('click', function(){
     localStorage.setItem(KEY, 'denied');
+    setCookie(COOKIE_NAME, 'denied', 365);
     setGtagConsent('denied');
     hideBanner(banner);
   });
