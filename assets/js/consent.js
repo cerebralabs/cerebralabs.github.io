@@ -4,6 +4,8 @@
     if(window.gtag){
       if(status === 'granted'){
         gtag('consent','update',{ 'ad_storage':'granted','analytics_storage':'granted' });
+        // ensure measurement starts after consent
+        gtag('config', 'G-FJEQ5ZZCHD');
       } else {
         gtag('consent','update',{ 'ad_storage':'denied','analytics_storage':'denied' });
       }
